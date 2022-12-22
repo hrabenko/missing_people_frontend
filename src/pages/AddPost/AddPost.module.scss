@@ -1,0 +1,20 @@
+.photoBlock {
+  display: flex;
+  flex-direction: column;
+  .image {
+      width: 50%;
+      padding: 5px;
+    }
+}
+
+.fields {
+  margin: 15px;
+}
+
+.buttons {
+  display: flex;
+
+  button {
+    margin-right: 15px;
+  }
+}
