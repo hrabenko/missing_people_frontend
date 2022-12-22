@@ -35,7 +35,7 @@ export const FullPost = () => {
         cities={data.cities}
         appearanceDescription={data.appearanceDescription}
         phoneNumber={data.phoneNumber}
-        photoUrl={data.photoUrl ? `http://localhost:4444${data.photoUrl}` : ''}
+        photoUrl={data.photoUrl ? `${process.env.REACT_APP_API_URL}${data.photoUrl}` : ''}
         user={data.user}
         createdAt={data.createdAt}
         isFullPost
