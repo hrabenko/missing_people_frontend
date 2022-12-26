@@ -112,7 +112,7 @@ export const AddPost = () => {
             <Button variant="contained" color="error" onClick={onClickRemoveImage}>
               Видалити
             </Button>
-            <img className={styles.image} src={`http://localhost:4444${photoUrl}`} alt="Uploaded" />
+            <img className={styles.image} src={`${process.env.REACT_APP_API_URL}${photoUrl}`} alt="Uploaded" />
           </>
       )}
       </div>
